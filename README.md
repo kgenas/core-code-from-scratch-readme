@@ -36,4 +36,28 @@
 2. Multiplique por (9/5) y agregue 32
 3. Mostrar valor obtenido
 
+# Some geometry
+# Volumen cubo
+1. obtener el parámetro la cual es un lado del cubo
+2. Multiplicar el valor lado * lado * lado
+3. Mostrar valor obtenido
 
+# Volumen de un cilindro
+1. Obtener los parámetros la cual es el radio y la altura
+2. Multiplicar radio*radio*altura*Pi
+3. Mostrar valor obtenido
+
+# Volumen de una pirámide
+1. Obtener los parámetros la cual es el longitud de base, ancho de la base y altura de la piramide
+2. Multiplicar 1/3 *longitudBase*anchoBase*alturaPiramide
+3. Mostrar valor obtenido
+
+# Volumen de cono
+1. Obtener los parámetros la cual es el radio, altura 
+2. Multiplicar  1/3 * Pi * radio * radio * altura
+3. Mostrar valor obtenido
+
+# Volumen de esfera
+1. Obtener el parámetro la cual es el radio
+2. Multiplicar 4/3 * Pi * radio * radio * radio
+3. Mostrar valor obtenido
