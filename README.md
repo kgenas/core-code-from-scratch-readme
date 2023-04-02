@@ -1,1 +1,1 @@
-# core-code-from-scratch-readme
+# Algoritmo de pizza Hawaiiana
