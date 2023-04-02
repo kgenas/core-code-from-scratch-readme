@@ -61,3 +61,10 @@
 1. Obtener el parámetro la cual es el radio
 2. Multiplicar 4/3 * Pi * radio * radio * radio
 3. Mostrar valor obtenido
+
+#Numbers
+![Primo](https://user-images.githubusercontent.com/66084160/229379744-ce06e0d9-492f-4444-99fe-da61a99ce098.png)
+
+
+
+
