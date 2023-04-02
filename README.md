@@ -25,3 +25,15 @@
 13. retorna la pizza 
 
 
+# Algoritmo Hot N Cold 
+# Fahrenheit a Celsius
+1. Obtener valor a calcular
+2. Reste 32 y multiplique por 5/9
+3. Mostrar valor obtenido
+
+# Celsius a Fahrenheit
+1. Obtener valor a calcular
+2. Multiplique por (9/5) y agregue 32
+3. Mostrar valor obtenido
+
+
