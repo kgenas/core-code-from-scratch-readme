@@ -1,3 +1,8 @@
+
+<div align="center">
+  <h1>Algorithms - Week 1</h1>
+</div>
+
 # Algoritmo de pizza Hawaiiana :writing_hand:
 
 0. Declara la función pizzaHawaiiana 
@@ -65,7 +70,12 @@
 
 # Numbers :writing_hand:
 
-![Primo](https://user-images.githubusercontent.com/66084160/229379744-ce06e0d9-492f-4444-99fe-da61a99ce098.png)
+<div align="center">
+
+   ![Primo](https://user-images.githubusercontent.com/66084160/229379744-ce06e0d9-492f-4444-99fe-da61a99ce098.png)  
+   
+</div>
+
 
 # How old are you :writing_hand:
 1. Solicitar fecha de nacimiento
@@ -85,7 +95,60 @@
   
   el cofre izquierdo y cofre derecho tiene tesoros
   
+<div align="center">
+  <h1>Pseudocode - Week 2</h1>
+</div>
+
+# Logic problem
+                                                       
+## Description
+
+The teacher asks his 5 students if they studied mathematics yesterday.
+
+1.Alice: "Nobody studied math yesterday".\
+2.Bob: "1 person studied math yesterday".\
+3.Charlie: "2 people studied math yesterday".\
+4.Dan: "3 people studied mathematics yesterday".\
+5.Eva: "4 people studied mathematics yesterday".
+
+The teacher knows that only those who studied would be telling the truth and those who didn't would be lying. Who is telling the truth?
+
+> Alice: Existe contradicción, por lo menos uno estudio\
+> Bob: Si una persona estudio y las opciones de Charlie, Dan, Eva se contradicen todas con Bob no puede haber que un estudiante estudio fuera afirmativo y ala misma vez más de un estudiante estudio por lo tanto lo que expreso Bob es verdad
 
 
+# Which comes first, cereal or milk?
+## pseudocode
+```python
+      Algoritmo cereal_milk
+         
+         Escribir  'vasos de leche: '
+         Leer leche
+         
+         Escribir 'taza de cereal'
+         Leer cereal
+         
+         Si leche = 1 Entonces
+            vasos<-'vaso'
+         SiNo
+            vasos<-'vasos'
+         FinSi
+
+         Si cereal = 1 Entonces
+            taza<-'taza'
+         SiNo
+            taza<-'tazas'
+         FinSi
+
+         Escribir  'desayuno de hoy: mezclar ',leche,' ',vasos,' de leche y ',cereal,' ',taza,' de cereal '
+      FinAlgoritmo
+
+```
+## flowchart
+<div align="center">
+
+   ![cereal](https://user-images.githubusercontent.com/66084160/231055804-bb46a014-3483-4769-a289-7303b5a95549.png)
+   
+</div>
 
 
