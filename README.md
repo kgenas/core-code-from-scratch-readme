@@ -97,6 +97,7 @@
   
 <div align="center">
   <h1>Pseudocode - Week 2</h1>
+  <h2>Week challenges (Monday) :computer:</h2>
 </div>
 
 # Logic problem
@@ -150,5 +151,20 @@ The teacher knows that only those who studied would be telling the truth and tho
    ![cereal](https://user-images.githubusercontent.com/66084160/231055804-bb46a014-3483-4769-a289-7303b5a95549.png)
    
 </div>
+<div align="center">  
+  <h2>Week challenges (Tuesday) :computer:</h2>
+</div>
 
-
+## Print my name
+```python
+   Algoritmo myName
+	    Imprimir  'eliseo canil'
+    FinAlgoritmo
+```
+## Print my name & age
+```python
+    Algoritmo printMyName
+      Imprimir  'eliseo canil'
+      Imprimir  35
+    FinAlgoritmo
+```
