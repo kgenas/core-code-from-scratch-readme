@@ -168,3 +168,46 @@ The teacher knows that only those who studied would be telling the truth and tho
       Imprimir  35
     FinAlgoritmo
 ```
+<div align="center">  
+  <h2>Week challenges (Wednesday) :computer:</h2>
+</div>
+
+## Even / Odd
+```python
+    	Algoritmo parImpar
+		Escribir "Ingrese un numero:"
+		Leer valor
+
+		C = valor % 2
+		Si C == 0 Entonces
+			Escribir "Numero Par " , C
+		SiNo 
+			Escribir "Numero Impar ", C
+		FinSi
+	FinAlgoritmo
+```
+## Register form
+```python
+	Algoritmo form
+		Escribir '===== USER FORM ====='
+		Escribir "First name"
+	    	Leer firstName
+		Escribir 'Last name'
+		Leer lastName
+		Escribir  'Age'
+		Leer age
+		Escribir 'Email'
+		Leer email
+		Escribir 'Address'
+		Leer address
+
+		Limpiar Pantalla
+		Escribir '===== USER DATA ====='
+		Escribir 'Full name: ' , firstName ,' ', lastName
+		Escribir 'Age: ' , age
+		Escribir 'Email: ', email
+		Escribir 'Address: ', address
+		Escribir '===================='
+	FinAlgoritmo
+
+```
