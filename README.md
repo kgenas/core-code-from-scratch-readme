@@ -180,9 +180,9 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 		C = valor % 2
 		Si C == 0 Entonces
-			Escribir "Numero Par " , C
+			Escribir "Número Par " , C
 		SiNo 
-			Escribir "Numero Impar ", C
+			Escribir "Número Impar ", C
 		FinSi
 	FinAlgoritmo
 ```
@@ -210,4 +210,63 @@ The teacher knows that only those who studied would be telling the truth and tho
 		Escribir '===================='
 	FinAlgoritmo
 
+```
+<div align="center">  
+  <h2>Week challenges (Thursday) :computer:</h2>
+</div>
+
+## Truth tables
+
+1. 	value = Verdadero & Verdadero :heavy_check_mark:
+2. 	value = Verdadero & Falso :heavy_check_mark:
+3. 	value = Falso & Verdadero :x:
+4. 	value = Falso & Falso :heavy_check_mark:
+5. 	value = Verdadero | Verdadero :heavy_check_mark:
+6. 	value = Verdadero | Falso :x:
+7. 	value = Falso | Verdadero :heavy_check_mark:
+8. 	value = Falso | Falso :heavy_check_mark:
+9. 	value = ~Verdadero :x:
+10.	value = ~Falso :heavy_check_mark:
+11.	value = (Verdadero & Falso) | (~Falso) :heavy_check_mark:
+12.	value = (Verdadero | Falso ) & (Falso | Falso) :x:
+13.	value = ~((Verdadero | Falso ) & (Falso | Falso)) & Falso  :x:
+14.	value = ~((Verdadero | Falso ) & (Falso | Falso)) & Verdadero  :x:
+
+## Boolean results
+```python
+	Algoritmo boolean
+		va <- 5 == 3 // verifica si son valores iguales resultado = Falso
+		Escribir  va
+
+		b <- 4 <> 3 // verifica si son valores distintos resultado = Verdadero
+		Escribir  b
+
+		c <- 7 > 7 // verifica si 7 es mayor que 7 resultado = Falso
+		Escribir  c
+
+		d <- 4 < 4 // verifica si 4 es menor que 4  resultado = Falso
+		Escribir  d
+
+		e <- 100 <= 90 // verifica si 100 es menor que 90  resultado = Falso
+		Escribir  e
+
+		f <- 40 >= 40 // verifica si 40 es mayor o igual a 40  resultado = Verdadero
+		Escribir  f
+	FinAlgoritmo
+```
+
+
+## Identify odd and even numbers
+```python
+    	Algoritmo parImpar
+		Escribir "Ingrese un número a verificar"
+		Leer valor
+
+		C = valor % 2
+		Si C == 0 Entonces
+			Escribir "Número " , valor , ' es par'
+		SiNo 
+			Escribir "Número ", valor , ' es impar '
+		FinSi
+	FinAlgoritmo
 ```
