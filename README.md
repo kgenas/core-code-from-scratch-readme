@@ -270,3 +270,58 @@ The teacher knows that only those who studied would be telling the truth and tho
 		FinSi
 	FinAlgoritmo
 ```
+<div align="center">
+  <h1>Pseudocode - Week 3</h1>
+  <h2>Week challenges (Monday) :computer:</h2>
+</div>
+
+## Simple calculator
+```python
+    	Algoritmo calculator
+		Escribir '=========== Simple Calculator ============'
+		Escribir 'Ingrese primer numero'
+		Leer numeroUno
+		Escribir 'Ingrese segundo numero'
+		Leer numeroDos
+		Escribir 'Ingrese una operacion: +,-,*,/'
+		Leer Operador
+		
+		Segun Operador Hacer
+			'+':
+				Escribir  'Procesando : ',numeroUno,' + ',numeroDos
+				resultado = numeroUno + numeroDos
+				Escribir 'Resultado :',resultado
+			'-':
+				Escribir  'Procesando : ',numeroUno,' - ',numeroDos
+				resultado = numeroUno - numeroDos
+				Escribir 'Resultado :',resultado
+			'*':
+				Escribir  'Procesando : ',numeroUno,' * ',numeroDos
+				resultado = numeroUno * numeroDos
+				Escribir 'Resultado :',resultado
+			'/':
+				Escribir  'Procesando : ',numeroUno,' / ',numeroDos
+				resultado = numeroUno / numeroDos
+				Escribir 'Resultado :',resultado
+			De Otro Modo:
+				Escribir 'Operacion incorrecta'
+		Fin Segun	
+	
+	FinAlgoritmo
+```
+
+## Special number
+```python
+    	Algoritmo specialNumber
+		Leer n
+		Si n == 100 Entonces
+			Imprimir 'This is a special number'
+		SiNo		
+			Si n < 1000 & n % 10 == 0 Entonces		
+				Imprimir 'This number is almost special'		
+			SiNo
+				Imprimir 'Just a regular number'
+			FinSi
+		FinSi
+	FinAlgoritmo
+```
