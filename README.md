@@ -325,3 +325,96 @@ The teacher knows that only those who studied would be telling the truth and tho
 		FinSi
 	FinAlgoritmo
 ```
+<div align="center">  
+  <h2>Week challenges (Tuesday) :computer:</h2>
+</div>
+
+## Simple calculator with Switch
+```python
+    	Algoritmo calculator
+		Escribir '=========== Simple Calculator ============'
+		Escribir 'Ingrese primer numero'
+		Leer numeroUno
+		Escribir 'Ingrese segundo numero'
+		Leer numeroDos
+		Escribir 'Ingrese una operacion: +,-,*,/'
+		Leer Operador
+		
+		Segun Operador Hacer
+			'+':
+				Escribir  'Procesando : ',numeroUno,' + ',numeroDos
+				resultado = numeroUno + numeroDos
+				Escribir 'Resultado :',resultado
+			'-':
+				Escribir  'Procesando : ',numeroUno,' - ',numeroDos
+				resultado = numeroUno - numeroDos
+				Escribir 'Resultado :',resultado
+			'*':
+				Escribir  'Procesando : ',numeroUno,' * ',numeroDos
+				resultado = numeroUno * numeroDos
+				Escribir 'Resultado :',resultado
+			'/':
+				Escribir  'Procesando : ',numeroUno,' / ',numeroDos
+				resultado = numeroUno / numeroDos
+				Escribir 'Resultado :',resultado
+			De Otro Modo:
+				Escribir 'Operacion incorrecta'
+		Fin Segun	
+	
+	FinAlgoritmo
+```
+## Multi Option Program
+```python
+    	Algoritmo MultiOptionProgram
+		Escribir '=========== Multi Opcion ============'
+		Escribir 'Opciones Disponibles'
+		Escribir '1. Sumar de dos numeros'
+		Escribir '2. Imprimir dia de la semana'
+		Escribir '3. Calcular longitud de texto'
+		Escribir 'Ingrese la opcion seleccionada:'
+		Leer opcion
+
+		Segun opcion Hacer
+			1:
+				Escribir 'Opcion 1. Sumar de dos numeros'
+				Escribir 'Ingrese primer numero'
+				Leer numeroUno
+				Escribir 'Ingrese segundo numero'
+				Leer numeroDos			
+
+				Escribir  'Procesando : ',numeroUno,' + ',numeroDos
+				resultado = numeroUno + numeroDos
+				Escribir 'Resultado :',resultado
+			2:
+				Escribir 'Opcion 2. Imprimir dia de la semana'
+				Escribir 'Ingrese el dia de la semana en numeros ( 1 - 7 )'
+				Leer dia
+				Segun dia Hacer
+					1:
+						Escribir 'Lunes'
+					2:
+						Escribir 'Martes'
+					3: 
+						Escribir 'Miercoles'
+					4:
+						Escribir 'Jueves'
+					5:
+						Escribir 'Viernes'
+					6:
+						Escribir 'Sabado'
+					7:
+						Escribir 'Domingo'
+					De Otro Modo:
+						Escribir 'numero incorrecto'
+				FinSegun
+			3:
+				Escribir  'Opcion 3. Calcular longitud de texto'
+				Escribir  'Ingrese un texto'			
+				Leer texto			
+				tamanio = Longitud(texto)			
+				Escribir  'Longitud de texto ',tamanio
+			De Otro Modo:
+				Escribir 'Opcion incorrecta'
+		Fin Segun	
+	FinAlgoritmo
+```
