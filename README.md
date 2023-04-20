@@ -418,3 +418,62 @@ The teacher knows that only those who studied would be telling the truth and tho
 		Fin Segun	
 	FinAlgoritmo
 ```
+<div align="center">  
+  <h2>Week challenges (Wednesday) :computer:</h2>
+</div>
+
+## Multiplication Tables
+```python
+    	Algoritmo Multiplication
+	
+		Escribir '====== Multiplication Tables ======'
+		Escribir 'Ingrese la tabla a calcular'
+		Leer tabla
+		num = 1;
+		Escribir '@ Tabla del ',tabla,' @'
+		Mientras num <= 10 Hacer
+			resultado = tabla * num
+			Escribir tabla,' * ',num,' = ',resultado
+			num = num + 1
+		FinMientras
+	FinAlgoritmo
+```
+## Simple calculator with Do While
+```python
+    	Algoritmo SimpleCalculator
+		
+		Repetir
+			Limpiar Pantalla
+			Escribir '====== Simple Calculator ====='
+			Escribir 'Ingrese primer numero'
+			Leer numeroUno
+			Escribir 'Ingrese segundo numero'
+			Leer numeroDos
+			Escribir 'Ingrese una operacion: +,-,*,/'
+			Leer Operador
+			Segun Operador Hacer
+				'+':
+					Escribir  'Procesando : ',numeroUno,' + ',numeroDos
+					resultado = numeroUno + numeroDos
+					Escribir 'Resultado : ',resultado
+				'-':
+					Escribir  'Procesando : ',numeroUno,' - ',numeroDos
+					resultado = numeroUno - numeroDos
+					Escribir 'Resultado : ',resultado
+				'*':
+					Escribir  'Procesando : ',numeroUno,' * ',numeroDos
+					resultado = numeroUno * numeroDos
+					Escribir 'Resultado : ',resultado
+				'/':
+					Escribir  'Procesando : ',numeroUno,' / ',numeroDos
+					resultado = numeroUno / numeroDos
+					Escribir 'Resultado : ',resultado
+				De Otro Modo:
+					Escribir 'Operacion incorrecta'
+			Fin Segun
+			Escribir 'Deseas continuar con otra operacion ? Si / No'
+			Leer operacion
+		Hasta Que operacion = 'No' | operacion = 'NO' | operacion = 'nO' | operacion = 'N' 
+
+	FinAlgoritmo
+```
