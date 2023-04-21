@@ -477,3 +477,87 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 	FinAlgoritmo
 ```
+<div align="center">  
+  <h2>Week challenges (Thursday) :computer:</h2>
+</div>
+
+## Multiplication Tables with For
+```python
+    	Algoritmo TablaFor
+		Definir  tabla Como Entero;	
+
+		Escribir '====== Multiplication Tables ======'
+		Escribir 'Ingrese la tabla a calcular'
+		Leer tabla
+		num = 1;
+		Escribir '@ Tabla del ',tabla,' @'
+		Para i = 1 Hasta  10 Con Paso 1 Hacer
+			resultado = tabla * num
+			Escribir tabla,' * ',num,' = ',resultado
+		FinPara
+	FinAlgoritmo
+```
+
+## Ascending and Descending Numbers
+```python
+    	Algoritmo ascendeingDescending
+		Definir  numero,contador Como Entero;	
+
+		Escribir '======= Ascending and Descending Numbers ======'
+		Escribir 'Ingrese un numero'
+		Leer numero
+		Escribir 'Operaciones disponibles:'
+		Escribir '1. Imprimir en orden Ascendente'
+		Escribir '2. Imprimir en orden Descendente'
+		Escribir 'Ingrese operacion a ejecutar'
+		Leer opcion
+		contador = numero
+		Segun opcion Hacer
+			1:
+				Para i = 1 Hasta  numero Con Paso 1 Hacer				
+					Escribir i
+				FinPara
+			2:
+				Mientras contador > 0 Hacer
+
+					Escribir contador
+					contador = contador - 1
+				FinMientras
+			De Otro Modo:
+				Escribir 'numero incorrecto'
+		FinSegun
+
+	FinAlgoritmo
+```
+## Greetings
+```python
+    	Algoritmo Greetings		
+		Definir  hora,contador Como Entero;	
+		contador = 0;
+		Repetir
+			Limpiar Pantalla
+			Escribir '====== Cheers ====='
+			Escribir 'Ingrese la hora actual (0-23)'
+			Leer hora		
+
+			SI  hora >= 0  & hora <= 12 Entonces
+				Imprimir 'Buenos dias!'			
+				contador = contador + 1
+			SiNo
+				SI  hora >= 13  & hora <= 18 Entonces
+					Imprimir 'Buenos tardes!'			
+					contador = contador + 1
+				SiNo
+					Imprimir  'Buenas noches!'
+					contador = contador + 1
+				Fin Si
+			Fin Si
+
+			Escribir 'Deseas continuar con otra operacion ? Si / No'
+			Leer operacion
+		Hasta Que operacion = 'No' | operacion = 'NO' | operacion = 'nO' | operacion = 'N' | operacion = 'no' 
+		Escribir 'Cantidad de Saludos realizados :',contador
+
+	FinAlgoritmo
+
+```
