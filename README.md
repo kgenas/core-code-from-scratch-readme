@@ -561,3 +561,76 @@ The teacher knows that only those who studied would be telling the truth and tho
 	FinAlgoritmo
 
 ```
+<div align="center">
+  <h1>Pseudocode - Week 4</h1>
+  <h2>Week challenges (Monday) :computer:</h2>
+</div>
+
+## Average sales and commission
+```python
+    	Algoritmo avergaSales
+		Definir sales,contador Como Entero;	
+		Definir value,total,average, commission Como Real;	
+		Escribir 'write the total number of sales to enter'
+		Leer sales
+		contador = 1
+		total = 0;
+		Mientras contador <= sales Hacer
+
+			Escribir 'Write the value of the sale number: ', contador
+			Leer value
+			total = value + total
+			contador = contador + 1
+		FinMientras
+		average = total / sales 
+		Si sales >= 6 
+			commission = total * 0.15
+		SiNo
+			commission = total * 0.10
+		FinSi
+
+		Escribir 'The average sales is: ',average
+		Escribir 'The commission received by the seller is: ',commission
+
+	FinAlgoritmo
+
+```
+## Even or odd
+```python
+    	Algoritmo Eve	
+		Definir numero,EvenOdd Como Entero
+		Repetir
+
+			Escribir  'write a number between 1 and 50'
+			Leer numero
+			Si numero < 1 | numero > 50
+				Escribir  'invalid number'
+			FinSi		
+		Hasta Que  numero >= 1 & numero <= 50
+
+		EvenOdd = numero % 2
+		contador = 1
+		Si EvenOdd == 0 Entonces
+
+			Mientras contador <= numero Hacer
+
+				EvenOdd = contador % 2
+				Si EvenOdd == 0 
+					Escribir  contador
+				FinSi
+				contador = contador + 1
+			FinMientras
+
+		SiNo 
+			Mientras contador <= numero Hacer
+
+				EvenOdd = contador % 2
+				Si EvenOdd <> 0
+					Escribir  contador
+				FinSi
+				contador = contador + 1
+			FinMientras
+		FinSi
+
+	FinAlgoritmo
+```
