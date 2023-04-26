@@ -634,3 +634,42 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 	FinAlgoritmo
 ```
+<div align="center">  
+  <h2>Week challenges (Tuesday) :computer:</h2>
+</div>
+
+## Full name
+```python
+    	Algoritmo fullName
+		Definir name, lastName Como Caracter;
+		Escribir  'write a name'
+		Leer name
+
+		Escribir 'write a last name'
+		Leer lastName
+
+		// name and lastName
+		Escribir  Mayusculas(Subcadena(name,0,1)),Minusculas(Subcadena(name,2,Longitud(name))),' ',Mayusculas(Subcadena(lastName,0,1)),Minusculas(Subcadena(lastName,2,Longitud(lastName)))
+
+	FinAlgoritmo
+```
+
+## Throw dice
+```python
+    	Algoritmo throwDice	
+		Definir contador,diceOne,diceTwo Como Entero;
+		Mientras contador < 10 Hacer
+
+			diceOne = azar(8)
+			diceTwo = Aleatorio(1,7)
+
+			Si diceOne == diceTwo Entonces
+				Escribir diceOne,' ',diceTwo,' ','the dice are the same'
+			SiNo
+				Escribir diceOne,' ',diceTwo
+			Fin Si
+
+			contador = contador + 1
+		Fin Mientras
+	FinAlgoritmo
+```
