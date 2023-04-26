@@ -660,7 +660,7 @@ The teacher knows that only those who studied would be telling the truth and tho
 		Definir contador,diceOne,diceTwo Como Entero;
 		Mientras contador < 10 Hacer
 
-			diceOne = azar(8)
+			diceOne = Aleatorio(1,7)
 			diceTwo = Aleatorio(1,7)
 
 			Si diceOne == diceTwo Entonces
