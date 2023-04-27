@@ -673,3 +673,69 @@ The teacher knows that only those who studied would be telling the truth and tho
 		Fin Mientras
 	FinAlgoritmo
 ```
+
+<div align="center">  
+  <h2>Week challenges (Wednesday) :computer:</h2>
+</div>
+
+## Distance to zero
+```python
+    	Algoritmo DistanceZero
+		Definir contador,number,compear Como Real;
+		contador = 1;
+		compear = 0;
+		Mientras contador <= 5 Hacer
+			Escribir 'Write a number'
+			Leer number
+			Si abs(number) > abs(compear) Entonces
+				compear = number
+			Fin Si
+			contador = contador + 1
+		Fin Mientras
+		Escribir  trunc(compear)
+	FinAlgoritmo
+
+```
+
+## Toss coin
+```python
+    	Algoritmo TossCoin
+		Definir valueOne,valueTwo, coin Como Entero;
+		Definir playerOne, playerTwo Como Caracter;
+
+		Escribir 'enter the name of the first player'
+		Leer playerOne
+
+		Escribir 'enter the amount to play'
+		Leer valueOne
+
+		Escribir 'enter the name of the second player'
+		Leer playerTwo
+
+		Escribir 'enter the amount to play'
+		Leer valueTwo
+
+		Si valueOne <= 0 & valueTwo <= 0 Entonces
+			Escribir 'game canceled'
+		SiNo
+			Si valueOne <= 0 & valueTwo > 0 Entonces			
+				Escribir 'player wins: ',Mayusculas(playerTwo)
+			FinSi
+
+			Si valueOne > 0 & valueTwo <= 0 Entonces
+				Escribir 'player wins: ',Mayusculas(playerOne)
+			FinSi
+
+			Si valueOne > 0 & valueTwo > 0 Entonces
+				coin = aleatorio(1,2)
+
+				Si coin == 1 Entonces
+					Escribir 'player wins: ',Mayusculas(playerOne),' amount won: ',valueTwo
+				SiNo
+					Escribir 'player wins: ',Mayusculas(playerTwo),' amount won: ',valueOne
+				Fin Si
+			FinSi
+		Fin Si
+	FinAlgoritmo
+
+```
