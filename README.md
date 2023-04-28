@@ -739,3 +739,57 @@ The teacher knows that only those who studied would be telling the truth and tho
 	FinAlgoritmo
 
 ```
+<div align="center">  
+  <h2>Week challenges (Thursday) :computer:</h2>
+</div>
+
+## Total price
+```python
+    	Funcion value <- TotalPrice ( price, vat )
+		Definir value Como Real
+		Si  price > 3000 Entonces
+			value = ( price + ( price / 100 * vat ) ) / 100*90
+		SiNo
+			value = ( price + ( price / 100 * vat ) )
+		Fin Si
+	Fin Funcion
+
+	Algoritmo CallTotalPrice
+
+		Imprimir  'precio 100 vat 20 ', TotalPrice(100,20)
+		Imprimir  'precio 10000 vat 25 ', TotalPrice(10000,25)
+		Imprimir  'precio 5000 vat 21 ', TotalPrice(5000,21)
+	FinAlgoritmo
+
+```
+
+## Reverse direction and size
+```python
+    	Funcion palabra <- Reverse ( letras )	
+		Definir tamanio Como Entero
+		Definir letra, palabra Como Caracter
+
+		tamanio = Longitud(letras)	
+		Mientras tamanio > 0 Hacer
+
+			letra = Subcadena(letras,tamanio,tamanio)		
+			Si  letra == Minusculas(letra)  Entonces
+				palabra = palabra + Mayusculas(letra)
+			SiNo
+				palabra = palabra + Minusculas(letra)
+			Fin Si
+			tamanio = tamanio - 1		
+		Fin Mientras
+
+	Fin Funcion
+
+	Algoritmo reverseDirection
+
+		Imprimir  Reverse('Text HelLo')
+		Imprimir  Reverse('HelLO')
+		Imprimir  Reverse('Leonardo')
+		Imprimir  Reverse('Text')
+	FinAlgoritmo
+
+
+```
