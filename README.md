@@ -793,3 +793,51 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 
 ```
+<div align="center">
+  <h1>Pseudocode - Week 5</h1>
+  <h2>Week challenges (Monday) :computer:</h2>
+</div>
+
+## Time Converter
+```python
+    	Funcion convertir <- timeConverter ( calcular )
+		Definir days, hours, minutes,seconds Como Entero
+		Definir convertir Como Caracter
+		days = trunc( calcular / 86400 )
+		hours =trunc(( calcular % 86400 ) / ( 60*60 ))
+		minutes = trunc((( calcular % 86400 ) % ( 60*60 ))/ 60)
+		seconds = (( calcular % 86400 ) % ( 60*60 )) % 60
+
+		convertir = 'days: ' + ConvertirATexto(days) + ' hours: ' + ConvertirATexto(hours) + ' minutes: ' + ConvertirATexto(minutes) + ' seconds: ' + ConvertirATexto(seconds)
+
+	Fin Funcion
+
+	Algoritmo Convert
+		Imprimir timeConverter(4000)
+		Imprimir timeConverter(400)
+		Imprimir timeConverter(150000)
+	FinAlgoritmo
+
+```
+## Compare distances
+```python
+    	Funcion trueFalse <- CompareDistances ()
+
+		Definir count Como Entero
+		Definir value,total Como Real
+		count = 1
+		total = 0
+		Mientras count <= 5 Hacer
+			Escribir 'Write a number'
+			Leer value		
+			total = total + value		
+			count = count + 1		
+		Fin Mientras
+		trueFalse = total > 0
+
+	Fin Funcion
+
+	Algoritmo Compare
+			Imprimir  CompareDistances()
+	FinAlgoritmo
+```
