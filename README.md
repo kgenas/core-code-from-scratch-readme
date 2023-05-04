@@ -841,3 +841,50 @@ The teacher knows that only those who studied would be telling the truth and tho
 			Imprimir  CompareDistances()
 	FinAlgoritmo
 ```
+<div align="center">  
+  <h2>Week challenges (Tuesday) :computer:</h2>
+</div>
+
+## Sum of pairs
+```python
+    	Funcion add <- SumPairs ()
+		Definir number Como Real
+
+		add = 0
+		Repetir		
+			Escribir  'write a number between 1 and 100'
+			Leer number
+			Si number > 0 & number < 101 Entonces
+				SI number % 2 == 0 Entonces
+					add = add + number 	
+				FinSi			
+			FinSi		
+		Hasta Que  number < 1 | number > 100
+
+	Fin Funcion
+
+	Algoritmo Sum
+		Imprimir  SumPairs()
+	FinAlgoritmo
+```
+## Mid point
+```python
+    	Funcion number <- between ( numberOne , numberTwo )
+
+		Definir total, number Como Real	
+		total = numberOne + numberTwo		
+		number = total / 2 
+
+	Fin Funcion
+
+	Algoritmo MidPoint
+
+		Escribir  between( 40,80)	// 60
+		Escribir  between( 40,-80)	// -20
+		Escribir  between( 50,50)	// 50
+		Escribir  between( -50,50)	// 0
+		Escribir  between( 12,6)	// 9
+
+	FinAlgoritmo
+
+```
