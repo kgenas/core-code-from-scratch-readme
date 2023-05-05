@@ -962,3 +962,31 @@ The teacher knows that only those who studied would be telling the truth and tho
 		Imprimir CallWeather()
 	FinAlgoritmo
 ```
+<div align="center">  
+  <h2>Week challenges (Thursday) :computer:</h2>
+</div>
+
+## If
+```js
+	const hi = 'hi'
+	if( hi === 'hi'){
+	    console.log('hi, how are you')
+	}else{
+	    console.log('Did not say hi')
+	}
+```
+## While
+```js
+	let i = 1
+	while (i < 10) {
+	    console.log('tabla 2 x',i,' ',i*2)
+	    i++;
+	  }
+```
+
+## For
+```js
+	  for (let i = 0; i < 10; i++) {
+	    console.log('tabla 2 x',i,' ',i*2)
+	  } 
+```
