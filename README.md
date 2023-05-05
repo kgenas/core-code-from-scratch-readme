@@ -888,3 +888,77 @@ The teacher knows that only those who studied would be telling the truth and tho
 	FinAlgoritmo
 
 ```
+<div align="center">  
+  <h2>Week challenges (Wednesday) :computer:</h2>
+</div>
+
+## Cashier
+```python
+    	Funcion total <- CallCashier ()
+		Definir opcion Como Caracter
+		Definir money Como Real
+		total = 1000;
+		Repetir		
+			Escribir  ' select an option '
+			Escribir ' a. to deposit '
+			Escribir ' b. withdraw '
+			Escribir ' c. go out '		
+			Leer opcion
+			Si opcion =='b' | opcion =='B'  Entonces
+				Escribir 'How much do you want to withdraw'				
+				Leer money
+				total = total - money
+			FinSi	
+
+			Si opcion =='a' | opcion =='A'  Entonces
+				Escribir 'How much do you want to deposit'				
+				Leer money
+				total = total + money
+			FinSi	
+
+		Hasta Que  opcion =='c' | opcion =='C'
+	Fin Funcion
+
+	Algoritmo Cashier
+
+		Imprimir CallCashier()
+	FinAlgoritmo
+
+```
+## Weather average
+```python
+    	Funcion average <- CallWeather()
+		Definir opcion Como Caracter
+		Definir count Como Entero
+		Definir valor,celsius Como Real
+
+		average = 0
+		Repetir		
+			Escribir  ' select an option '
+			Escribir ' a. enter degrees celsius '
+			Escribir ' b. enter degrees fahrenheit '
+			Escribir ' c. go out '
+			Leer opcion
+			Si opcion =='a' | opcion =='A'  Entonces
+				Leer valor
+				average = average + valor			
+				count = count + 1			
+
+			FinSi	
+
+			Si opcion =='b' | opcion =='B'  Entonces
+				Leer valor			
+				average = average + ( valor -32) / 1.8 
+				count = count + 1
+
+			FinSi	
+
+		Hasta Que  opcion =='c' | opcion =='C'
+		average = average / count
+	Fin Funcion
+
+	Algoritmo Weather
+
+		Imprimir CallWeather()
+	FinAlgoritmo
+```
