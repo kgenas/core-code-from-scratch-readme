@@ -1,5 +1,4 @@
 
-</br>
 [Custom foo description](#flowchart)
 </br>
 [Custom foo description](#average-sales-and-commission)
