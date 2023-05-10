@@ -1,9 +1,10 @@
-
+[Custom foo description](#hoo)
 <div align="center">
   <h1>Algorithms - Week 1</h1>
 </div>
 
 # Algoritmo de pizza Hawaiiana :writing_hand:
+
 
 0. Declara la función pizzaHawaiiana 
 // Ingredientes
@@ -119,6 +120,7 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 
 # Which comes first, cereal or milk?
+# hoo
 ## pseudocode
 ```python
       Algoritmo cereal_milk
