@@ -990,3 +990,55 @@ The teacher knows that only those who studied would be telling the truth and tho
 	    console.log('tabla 2 x',i,' ',i*2)
 	  } 
 ```
+
+<div align="center">
+  <h1>JavaScript - Week 6</h1>
+  <h2>Week challenges (Tuesday):computer:</h2>
+</div>
+
+## Variables
+```js
+	  let firstname = 'Lata'
+```
+
+## What is x?
+```js
+	 let x = 'Geeta';
+	 //Which value does x have after execution of the following code? 
+		'Geeta'	 
+```
+
+## Several variables
+```js
+	//Exercise
+		//Declare a variable flower and assign it the value 'rose'. 
+		//Declare a second variable tree and assign it the value 'maple'.
+	let flower = 'rose'
+	let tree = 'maple'	 
+```
+
+## Reassignment
+```js
+	//Exercise
+		//Which value does x have after execution of the following code? 
+	let x = 'Tic';
+	x = 'Tac';
+	x = 'Toe';
+	
+	'Toe'
+```
+
+## Assign variables
+
+```js
+	//Exercise
+		//Which value does x have after execution of the following code? 
+	let x = 'Laurel';
+	let y = 'Hardy';
+	let z = y;
+	y = x;
+	x = z;
+	
+	'Hardy'
+```
+
