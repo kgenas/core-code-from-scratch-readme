@@ -1,4 +1,4 @@
-[Custom foo description](#hoo)
+
 </br>
 [Custom foo description](#flowchart)
 </br>
@@ -125,7 +125,6 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 
 # Which comes first, cereal or milk?
-# hoo
 ## pseudocode
 ```python
       Algoritmo cereal_milk
