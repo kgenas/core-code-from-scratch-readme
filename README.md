@@ -1,4 +1,9 @@
 [Custom foo description](#hoo)
+</br>
+[Custom foo description](#flowchart)
+</br>
+[Custom foo description](#average-sales-and-commission)
+
 <div align="center">
   <h1>Algorithms - Week 1</h1>
 </div>
