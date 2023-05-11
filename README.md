@@ -1034,7 +1034,6 @@ The teacher knows that only those who studied would be telling the truth and tho
 ```
 
 ## Assign variables
-
 ```js
 	//Exercise
 		//Which value does x have after execution of the following code? 
@@ -1046,4 +1045,46 @@ The teacher knows that only those who studied would be telling the truth and tho
 	
 	'Hardy'
 ```
+<div align="center">  
+  <h2>Week challenges (Wednesday):computer:</h2>
+</div>
 
+## Functions
+```js
+	function hello(){
+	 return 'Hello world!';
+	}
+```
+
+## Multiple functions
+```js
+	function a(){
+	 return 'Hello a!'
+	}
+
+	function b(){
+	 return 'Hello b!'
+	}
+```
+
+## Function calls
+```js
+	function greet(){
+	 return 'Haydo!';
+	}
+
+	let salutation = greet();
+```
+
+## What is x? (function version)
+```js
+	'How do you do?'
+```
+
+## Parameters
+```js
+	function echo(input)
+	{
+	 return input
+	} 
+```
