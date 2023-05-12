@@ -1088,3 +1088,44 @@ The teacher knows that only those who studied would be telling the truth and tho
 	 return input
 	} 
 ```
+<div align="center">  
+  <h2>Week challenges (Thursday):computer:</h2>
+</div>
+
+## Strings
+```js
+	function greet(hello){
+	 return 'Hello ' + hello +'!'
+	}	 
+```
+
+
+## String: length
+```js
+	function length(text){
+	 return text.length
+	}		 
+```
+
+## String: toUpperCase()
+```js
+	function toCase(text){
+	 return text.toLowerCase()+'-'+text.toUpperCase()
+	}		 
+```
+
+## String: charAt()
+```js
+	function shortcut(textOne, textTwo){
+	 return textOne.charAt(0) + textTwo.charAt(0)
+	}	 
+```
+
+## String: indexOf()
+```js
+	function indexOfIgnoreCase(textOne, textTwo){
+	  let a = textOne.toLowerCase();
+	  let b = textTwo.toLowerCase();
+	  return a.indexOf(b)
+	}	 
+```
