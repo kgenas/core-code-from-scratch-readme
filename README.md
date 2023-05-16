@@ -1129,3 +1129,53 @@ The teacher knows that only those who studied would be telling the truth and tho
 	  return a.indexOf(b)
 	}	 
 ```
+
+<div align="center">
+  <h1>JavaScript - Week 7</h1>
+  <h2>Week challenges (Monday):computer:</h2>
+</div>
+
+## String: substr()
+```js
+	  function firstWord(word) {
+		const position = word.indexOf(' ');
+		const newWord = word.substr(0,position);
+		return newWord;
+	   }
+```
+
+## String: replace()
+```js
+	    function normalize(date)
+	    {
+		let newDate = date.replace(/-/g,'/')
+		return  newDate
+	    }
+```
+
+## Increment
+```js
+	     // Which value does x have after execution of the following code ? 
+		let x = 3;
+		x++;
+		x = x * 2;
+		x--;
+
+	    // answer
+		7
+```
+
+## Fahrenheit
+```js
+	    function toFahrenheit(Celsius){
+		return Celsius * (9/5) +32 
+	    }
+```
+
+## Boolean
+```js
+	    function nand(valueOne,valueTwo){
+		let x1 = valueOne && valueTwo
+		return !x1
+	    }
+```
