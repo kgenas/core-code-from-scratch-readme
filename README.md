@@ -1179,3 +1179,44 @@ The teacher knows that only those who studied would be telling the truth and tho
 		return !x1
 	    }
 ```
+
+<div align="center">  
+  <h2>Week challenges (Tuesday):computer:</h2>
+</div>
+
+## Objects
+```js
+	  function animal(obj) {
+	    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+	 }
+```
+
+## Return to sanity
+```js
+	  function mystery() {
+		var results =
+		    {sanity: 'Hello'};
+		return results;
+	   }
+```
+
+## Object syntax debug
+```js
+	  var rooms = {
+	    first: {
+		description: 'This is the first room',
+		items: {
+		chair: 'The old chair looks comfortable',
+		lamp: 'This lamp looks ancient'
+		}
+	    },
+	    second: {
+		description: 'This is the second room',
+		items: {
+		couch: 'This couch looks like it would hurt your back',
+		table: 'On the table there is an unopened bottle of water'
+		}
+	    }
+	  }
+```
+
