@@ -1219,4 +1219,47 @@ The teacher knows that only those who studied would be telling the truth and tho
 	    }
 	  }
 ```
+<div align="center">  
+  <h2>Week challenges (Wednesday):computer:</h2>
+</div>
+
+## Count strings in objects
+```js
+	  function strCount(obj){
+	    // Your code here
+		let count = 0
+	    //* recorre todos los elementos(nombre de la variable) del objeto
+		for (key in obj) {
+		//* prueba ----> console.log( key ,' ', obj[key])
+		if (typeof obj[key] == 'string') count++;
+		if (typeof obj[key] == 'object') count+= strCount(obj[key]);//* llamada recursiba
+	    }
+
+	    return count
+	  }
+```
+
+## Extending JavaScript Objects: Get First & Last Array Element
+```js
+	    Array.prototype.first = function() {
+	    return this[0];
+	    };
+
+	    Array.prototype.last = function() {
+	    return this[this.length-1];
+	    };
+
+```
+
+## Object Oriented Piracy
+```js
+	    function Ship(draft,crew) { 
+	    this.draft = draft;
+	    this.crew = crew;
+
+	    this.isWorthIt = function (){
+			return (this.draft - this.crew * 1.5) > 20;
+	    	}
+	    }
+```
 
