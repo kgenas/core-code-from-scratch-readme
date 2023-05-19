@@ -1262,4 +1262,60 @@ The teacher knows that only those who studied would be telling the truth and tho
 	    	}
 	    }
 ```
+<div align="center">  
+  <h2>Week challenges (Thursday):computer:</h2>
+</div>
 
+## Convert a String to a Number
+```js
+	const stringToNumber = function(str){
+	  // put your code here
+	  return Number(str);
+	}
+```
+
+## Convert number to reversed array of digits
+```js
+	function digitize(n) {
+	  //code here
+	  return String(n).split('').reverse().map( num => Number( num ))
+	}
+	
+	//otra solucion
+	
+	const a = 3234234
+	console.log( String(a).split('').reverse().map( Number) )
+```
+
+## Truthy and Falsy
+```js
+	const truthy = [true,{},[],42,"0","false"];
+	const falsy = [false,null,undefined,0,NaN];
+```
+
+## Training JS #4: Basic data types--Array
+```js
+	function getLength(arr){
+	    //return length of arr
+	    return arr.length
+	}
+	function getFirst(arr){
+	    //return the first element of arr
+	    return arr.shift()
+	}
+	function getLast(arr){
+	    //return the last element of arr
+	    return arr.pop()
+	}
+	function pushElement(arr){
+	    var el=1;
+	    //push el to arr
+	    arr.push(el)
+	    return arr
+	}
+	function popElement(arr) {
+	    //pop an element from arr
+	    arr.pop()
+	    return arr
+	}
+```
