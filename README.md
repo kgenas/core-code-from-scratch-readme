@@ -1319,3 +1319,70 @@ The teacher knows that only those who studied would be telling the truth and tho
 	    return arr
 	}
 ```
+<div align="center">
+  <h1>Javascript - Week 8</h1>
+  <h2>Week challenges (Monday)  :computer:</h2>
+</div>
+
+## Training JS #7: if..else and ternary operator
+```js
+	function saleHotdogs(n){
+	  if( n < 5 ) return n*100
+	  else if( n >= 5 && n < 10 ) return n*95
+	  else return n*90
+	}
+```
+
+## Training JS #8: Conditional statement--switch
+```js
+	function howManydays(month){
+	  var days;
+	  switch (month){
+	      
+	      case  1:
+	      case  3:
+	      case  5:
+	      case  7:
+	      case  8:
+	      case  10:
+	      case  12:
+		  days = 31;
+		  break;
+	      case  4:
+	      case  6:
+	      case  9:
+	      case  11:
+		  days = 30;
+		  break;
+	      default:
+		  days = 28;
+	  }
+	  return days;
+	}
+```
+
+## Basic calculator
+```js
+	function calculate(num1, operation, num2) {
+	 //TODO: make a basic calculator. 
+	  switch( operation){
+	      case '+':
+		 return num1 + num2;
+		 break;
+	      case '-':
+		return num1 - num2;
+		break;
+	      case '*':
+		return num1 * num2;
+		break;
+	      case '/':
+		if( num2 == 0 ) return null;
+		if( num1 >0 &&  num2 < 0 ) return num2;
+		return num1 / num2;
+		break;
+	      default:
+		return null
+	      
+	  }
+	}
+```
