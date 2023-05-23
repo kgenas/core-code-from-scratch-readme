@@ -1386,3 +1386,50 @@ The teacher knows that only those who studied would be telling the truth and tho
 	  }
 	}
 ```
+<div align="center">  
+  <h2>Week challenges (Tuesday)  :computer:</h2>
+</div>
+
+## Even or odd
+```js
+	function evenOrOdd(number) {
+	  
+	  let value = number % 2 == 0 ? 'Even':'Odd';
+	  return value   
+	}
+```
+
+## A wolf in sheep's clothing
+```js
+	function warnTheSheep(queue) {
+
+	  let count = 1;
+	  if('wolf' === queue.pop()) return 'Pls go away and stop eating my sheep';
+	  while ('wolf' !== queue.pop()) count++;
+	  return `Oi! Sheep number ${count}! You are about to be eaten by a wolf!`;
+	  
+	}
+```
+
+## Decode the morse code
+```js
+	decodeMorse = function(morseCode){
+	  // Your code here
+	  // You can use MORSE_CODE[morse]
+	  
+	  let morse = morseCode.trim().split(' ');
+	  let space = 1;
+	  let message='';
+
+	 for(let index=0; index < morse.length; index++){
+	   if(morse[index] === '') space++;
+	   if(morse[index] ==='' && space===3){
+	     message +=' ';
+	     space =1;
+	   }   
+	   if(MORSE_CODE[morse[index]]) message += MORSE_CODE[morse[index]];
+	 }
+	 return message;
+	  
+	}
+```
