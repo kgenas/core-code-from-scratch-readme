@@ -1433,3 +1433,46 @@ The teacher knows that only those who studied would be telling the truth and tho
 	  
 	}
 ```
+<div align="center">  
+  <h2>Week challenges (Wednesday):computer:</h2>
+</div>
+
+## Who likes it?
+```js
+	function likes(names) {
+    
+	    let value = '';    
+	    if (names.length == 0) return 'no one likes this';
+	    if (names.length == 1) return `${names.shift()} likes this`;
+	    if (names.length == 2) return `${names.shift()} and ${names.shift()} like this`;
+	    if (names.length == 3) return `${names.shift()}, ${names.shift()} and ${names.shift()} like this`;
+
+	    value += `${names.shift()}, ${names.shift()}`;    
+	    value += ` and ${names.length} others like this`;
+	    return value;
+	}
+```
+
+## Bit counting
+```js
+	var countBits = function(n) {
+	  // Program Me  
+	  return n.toString(2).split('').filter( x => x ==='1').length
+	};
+```
+
+## Your order, please
+```js
+	function order(words){
+	  // ...
+	  let wordOne = words.split(' ');
+	  let wordTwo = words.split('').sort().filter( x => Number(x));
+	  let value ='';
+
+	  for( let index=0; index < wordTwo.length; index++){
+	    const match = new RegExp(wordTwo[index],'g');
+	    value += wordOne.filter( x => x.match(match)) +' ';
+	  }
+	  return value.trim()
+	}
+```
