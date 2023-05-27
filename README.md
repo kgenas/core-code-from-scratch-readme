@@ -1476,3 +1476,78 @@ The teacher knows that only those who studied would be telling the truth and tho
 	  return value.trim()
 	}
 ```
+<div align="center">  
+  <h2>Week challenges (Thursday):computer:</h2>
+</div>
+
+## Counting duplicates
+```js
+	 function duplicateCount(text){
+	    
+	    let s1 = text.split('');
+	    let s2 = text;
+	    let count = 0;
+
+	    for (let index = 0; index < s1.length; index++) {
+		let match = new RegExp(s1[index], 'gi');        
+
+		if (s2.match(match) !== null) {        
+		    if (s2.match(match).length > 1) {
+			s2 = s2.replace(match, '');
+			count++;
+		    }
+		}
+
+
+	    }
+	    return count;
+	}
+```
+
+## Encrypt this!
+```js
+	 var encryptThis = function (text) {
+	    // Implement me! :)
+		let letras = text.split(' ');
+		for (let index = 0; index < letras.length; index++) {
+		    if (letras[index].length > 3) {                        
+			letras[index] = letras[index][0] + letras[index][letras[index].length - 1] + letras[index].substring(2, (letras[index].length)-1) + letras[index][1]
+
+		    } else {
+			letras[index] = letras[index][0] + letras[index].substring(1, letras[index].length).split('').reverse().join('')
+		    }
+
+		    const match = new RegExp(letras[index][0], 'i');    
+		    letras[index] = letras[index].replace(match,letras[index][0].charCodeAt(0));
+
+		}
+
+		return letras.join(' ');
+	    }
+```
+
+## Valid parentheses
+```js
+	 function validParentheses(parens) {
+	    // your code here ..
+		while (parens.includes('()')) parens = parens.replace(/\(\)/, '');        
+
+		return parens.length == 0 
+	 }
+```
+
+
+## Convert string to camel case
+```js
+	 function toCamelCase(str){
+		let letter =str.split(/-|_/);
+		let result = '';
+		    if(letter.length ===1 ) return '';
+		    for (let index = 0; index < letter.length; index++) {
+
+			if (index !== 0) result += letter[index][0].toUpperCase() + letter[index].substring(1);
+			else result += letter[index][0] + letter[index].substring(1);
+		    }
+		return result;
+	 }
+```
