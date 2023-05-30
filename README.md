@@ -1551,3 +1551,40 @@ The teacher knows that only those who studied would be telling the truth and tho
 		return result;
 	 }
 ```
+<div align="center">
+  <h1>Javascript - Week 9</h1>
+  <h2>Week challenges (Monday)  :computer:</h2>
+</div>
+
+## "this" is a problem
+```js
+	 function NameMe(first, last) {
+		this.firstName = first;
+		this.lastName = last;
+		this.name = this.firstName + ' ' + this.lastName;
+	 }
+```
+
+##  Thinkful - List and Loop Drills: Lists of lists
+```js
+	  function processData(data){
+		//your code here
+		let result = data.map( array => array[0] - array[1]).reduce( (add,value)=> add * value, value=1)
+
+		return result;
+	  }
+```
+
+##  Stop gninnipS My sdroW!
+```js
+	  function spinWords(string){
+	    //TODO Have fun :)
+	    let result = string.split(' ').map( value =>{
+		if( value.length >= 5){
+		return value.split('').reverse().join('');
+		}
+		return value;
+	    }).join(' ')
+	    return result;
+	  }
+```
