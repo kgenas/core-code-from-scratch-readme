@@ -1588,3 +1588,58 @@ The teacher knows that only those who studied would be telling the truth and tho
 	    return result;
 	  }
 ```
+
+<div align="center">  
+  <h2>Week challenges (Tuesday)  :computer:</h2>
+</div>
+
+
+##   "this" is an other problem
+```js
+	function NamedOne(first, last) {
+	// -- SHOULD be changed --
+	    this.firstName = first;
+	    this.lastName = last;    
+	    Object.defineProperty(this,'fullName',{                
+		    get: function(){
+			return this.firstName +' '+this.lastName
+		    },
+		    set: function(value){
+			const name = value.split(' ');    
+			if( name.length == 2){
+			  this.firstName = name[0];
+			  this.lastName = name[1];
+			}
+	    }})
+	}
+```
+
+##  Who likes it?"
+```js
+	  function likes(names) {
+	    let value = '';    
+	    if (names.length == 0) return 'no one likes this';
+	    if (names.length == 1) return `${names.shift()} likes this`;
+	    if (names.length == 2) return `${names.shift()} and ${names.shift()} like this`;
+	    if (names.length == 3) return `${names.shift()}, ${names.shift()} and ${names.shift()} like this`;
+
+	    value += `${names.shift()}, ${names.shift()}`;    
+	    value += ` and ${names.length} others like this`;
+	    return value;
+	 }
+```
+
+##  Convert string to camel case
+```js
+	  function toCamelCase(str) {
+		  let letter =str.split(/-|_/);
+		  let result = '';
+		    if(letter.length ===1 ) return '';
+		    for (let index = 0; index < letter.length; index++) {
+
+			if (index !== 0) result += letter[index][0].toUpperCase() + letter[index].substring(1);
+			else result += letter[index][0] + letter[index].substring(1);
+		    }
+		  return result;
+	}
+```
