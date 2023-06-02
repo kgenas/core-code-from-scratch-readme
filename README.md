@@ -1670,3 +1670,33 @@ The teacher knows that only those who studied would be telling the truth and tho
 	  return parens.length == 0 
 	}
 ```
+
+<div align="center">  
+  <h2>Week challenges (Thursday)  :computer:</h2>
+</div>
+
+##  The Hashtag Generator
+```js
+	 function generateHashtag (str) {
+	     let result = '#'+str.split(/\s/g).map(w => (w.charAt(0).toUpperCase()) + w.slice(1)).join('');
+	     if (result === '#' || result.length >140 ) return false;
+
+	     return result;
+	 }    
+```
+
+##  String incrementer
+```js
+	 function incrementString (strng) {
+	    // return incrementedString
+	    let result = strng.replace(/[0-9]+$/g, (num) => { 
+		let newNum = (parseInt(num) + 1).toString();
+		while (newNum.length < num.length) {
+		    newNum = "0" + newNum;
+		}
+		return newNum;
+	    })
+	    if( result === strng) return result.concat(1) 
+	    return result
+	 }    
+```
