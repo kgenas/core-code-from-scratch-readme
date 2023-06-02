@@ -1643,3 +1643,30 @@ The teacher knows that only those who studied would be telling the truth and tho
 		  return result;
 	}
 ```
+
+<div align="center">  
+  <h2>Week challenges (Wednesday)  :computer:</h2>
+</div>
+
+##  Easy mathematical callback
+```js
+	function processArray(arr, callback) {
+ 	   return arr.map(callback);
+	}
+```
+
+##  Moving Zeros To The End
+```js
+	function processArray(arr, callback) {
+ 	   return arr.map(callback);
+	}
+```
+
+##  Valid Parentheses
+```js
+	function validParentheses(parens) {
+	  // your code here ..
+	  while (parens.includes('()')) parens = parens.replace(/\(\)/, '');                
+	  return parens.length == 0 
+	}
+```
