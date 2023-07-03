@@ -263,6 +263,19 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 ## Identify odd and even numbers
 ```python
+
+	 function generateHashtag (str) {
+	     let result = '#'+str.split(/\s/g).map(w => (w.charAt(0).toUpperCase()) + w.slice(1)).join('');
+	     if (result === '#' || result.length >140 ) return false;
+
+	     return result;
+	 }    
+
+String incrementer
+
+	 function incrementString (strng) {
+	    // return incrementedString
+	    let result = strng.replace(/[0-9]+$/g, (num) => { 
     	Algoritmo parImpar
 		Escribir "Ingrese un número a verificar"
 		Leer valor
@@ -1700,3 +1713,181 @@ The teacher knows that only those who studied would be telling the truth and tho
 	    return result
 	 }    
 ```
+<div align="center">
+  <h1>Javascript - Week 10</h1>  
+</div>
+
+## Week challenges
+
+<div align="center">
+  <h1>React - Week 11</h1>  
+</div>
+
+## Week challenges 
+
+<div align="center">
+  <h1>Node.JS - Week 12 12</h1>  
+  <h2>Week challenges (Monday)  :computer:</h2>
+</div>
+
+## Node.JS Core Understanding
+
+### 1. What is Node.JS?
+ >  Node.js® es un tiempo de ejecución de JavaScript 
+    basado en el motor de JavaScript V8 de Chrome
+
+ #### What is NPM?
+ > Administrador de paquetes de nodos
+
+### 2. What problem does Node.JS solve (Is there any problem that can be solved with Node.JS thinking)?
+ > Trata de resolver problemas en la parte del BackEnd
+ 
+### 3. What is the V8 Javascript Engine?
+ >  El motor de JavaScript es quien convierte tu codigo de JavaScript en
+    codigo ejecutable por la maquina en la que va a correr.
+
+### 4. Is Node.JS really necessary in the Development ecosystem?
+ > Es necesario y es una opcion mas la ventaje que tiene que se basa en
+   JavaScript la cual se puede usar el mismo lenguaje en fronEnd que
+   backEnd
+ 
+ #### Why not use PHP or Golang?
+  >  Es otra alternativa de poder usar el backEnd, va depender de las necesidades
+     del negocio cual usar.
+
+### 5. What is the difference between Node.JS and any other browser?
+ >  Tanto el navegador como Node.js utilizan JavaScript como lenguaje
+    de programacion. La creacion de aplicaciones que se ejecutan en el 
+    navegador es algo completamente diferente a la creacion de una aplicacion
+    Node.js
+ #### Are Node.JS and a browser the same?
+  >  En el navegador, la mayoría de las veces lo que está haciendo es interactuar con
+     el DOM u otras API de la plataforma web como las cookies. Esos no existen en
+     Node.js, por supuesto. No tiene el documenty window todos los demás objetos que
+     proporciona el navegador.
+ 
+### 6. What is NVM and Why is it useful for Node.JS developers?
+ > npm es el administrador de paquetes estandar para Node.js
+
+  #### npm
+   >  gestiona las descargas de las dependencias de tu proyecto
+      administra el control de versiones, por lo que puede especificar
+      cualquier version especifica de un paquete o solicitar una version
+      superior o inferior a la que necesita
+ 
+## Node.JS Module System
+
+### 1. What is a Javascript Module?
+ >  Los programas JavaScript comenzaron siendo bastante pequenos
+    la mayor parte de su uso en los primeros dias era para realizar
+    tareas de scripting aisladas, proporcionando un poco de interactividad
+    a tus paginas web donde fuera necesario, por lo que generalmente no se
+    necesitaban grandes scripts. Avancemos unos anos y ahora tenemos
+    aplicaciones completas que se ejecutan en navegadores con mucho
+    JavaScript, JavaSript ahora se usa en otros contextos( Node.js )
+
+### 2. Why are Javascript Modules necessary?
+ > Crea módulos para organizar y estructurar mejor su base de código. 
+   Puede usarlos para dividir programas grandes en fragmentos de 
+   código más pequeños, más manejables y más independientes que llevan 
+   a cabo una o varias tareas relacionadas.
+
+### 3. What module standards are available in Node.JS?
+ > Los módulos ECMAScript son el formato estándar oficial para empaquetar código 
+   JavaScript para su reutilización. Los módulos se definen usando una variedad 
+   de declaraciones import y export.
+
+### 4. What are the differences between ESModules and CommonJS modules?
+ > No __filename o __dirname
+   >> Estas variables de CommonJS no están disponibles en los módulos ES.
+
+ > No NODE_PATH    		
+  >> NODE_PATH no es parte de import los especificadores de resolución. 
+     Utilice enlaces simbólicos si desea este comportamiento.
+
+### 5. Which types of modules exist in Node.JS?
+ > Node.js tiene dos sistemas de módulos: módulos CommonJS y módulos ECMAScript.
+
+## Node.JS Hello World - Practice
+
+### 1. Why do we run the npm init command and not node init to create a new Node.JS project?
+ > npm init
+   Genera el archivo package.json
+			
+### 2. When you entered the npm init command and answered the questions you saw in the terminal, a new file called packacke.json was generated.
+```js   
+   package.json: contiene
+	{
+	  "name": "hello_world_node",
+	  "version": "1.0.0",
+	  "description": "",
+	  "main": "index.js",
+	  "scripts": {
+	    "test": "echo \"Error: no test specified\" && exit 1"
+	  },
+	  "author": "",
+	  "license": "ISC"
+	}
+```
+### What does this file do?	
+ > Su finalidad es mantener un historial de los paquetes instalados y optimizar 
+   la forma en que se generan las dependencias del proyecto y los contenidos de 
+   la carpeta node_modules/
+	
+### Why is this file generated?
+  > - el archivo contiene  la semántica de la versión que tiene el proyecto
+  > - versión: versión del proyecto
+  > - description: que lo que resuelve el proyecto y porque fue creado
+  > - entry point: indica donde inicia el archivo a ejecutar el proyecto
+  > - git repository: el cual donde está el repositorio de git
+  > - keywords: palabras claves para encontrar nuestro proyecto
+  > - author: el creador del proyecto
+  > - license: licencia de software
+
+## Node.JS Module System - Practice
+
+### operations.js
+```js	 
+	const sum = (x , y) => {
+	    return x + y
+	}
+	
+	const subtract = ( x , y) => {
+	    return x - y
+	}
+	
+	module.exports = { sum, subtract }
+```
+### main.js
+```js	
+	const { sum, subtract } = require('./operations');
+	
+	let value01 = 4;
+	let value02 = 4;
+	
+	let total = 0;
+	
+	total = sum(value01,value02);
+	console.log(`sum: ${total}`)
+	
+	total = subtract(value01,value02);
+	console.log( `substract: ${total}` )
+```
+<div align="center">  
+  <h2>Week challenges (Wednesday)  :computer:</h2>
+</div>
+
+## Client-Server Model
+
+
+1. What is a Server?
+2. What is a Client?
+3. Is a server just another physical computer?
+   3.1 Why do we refer to a certain class of applications as Servers?
+   3.2 What is the difference?
+4. Is there any similarity between human communication and the client-server model?
+   4.1 List some examples
+5. Is the client-server model applicable only to the Web?
+   5.1 Do desktop applications use the client-server model?
+   5.2 Can you mention any other example of this model outside the Web?
+
