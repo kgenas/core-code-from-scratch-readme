@@ -1879,15 +1879,183 @@ String incrementer
 
 ## Client-Server Model
 
+### 1. What is a Server?
+ > Los servidores son computadoras orientadas al alojamiento y despacho
+   de datos de distinto tipo.
 
-1. What is a Server?
-2. What is a Client?
-3. Is a server just another physical computer?
-   3.1 Why do we refer to a certain class of applications as Servers?
-   3.2 What is the difference?
-4. Is there any similarity between human communication and the client-server model?
-   4.1 List some examples
-5. Is the client-server model applicable only to the Web?
-   5.1 Do desktop applications use the client-server model?
-   5.2 Can you mention any other example of this model outside the Web?
+### 2. What is a Client?
+ > Un cliente puede solicitar código de programa actualizado o el uso de 
+   aplicaciones de un servidor de código. Para obtener un nombre o una 
+   dirección, un cliente se pone en contacto con un servidor de nombres. 
+   Un cliente también puede solicitar archivos y datos para la 
+   entrada de datos, las consultas o la actualización de registros de un 
+   servidor de archivos.
 
+### 3. Is a server just another physical computer?
+ > No
+
+ #### 3.1 Why do we refer to a certain class of applications as Servers?
+  > por que se realiza peticiones y se obtiene  información según lo
+    solicitado
+
+ #### 3.2 What is the difference?
+  > La manera que se realiza la comunicación y el tipo de información
+    que provee
+
+### 4. Is there any similarity between human communication and the client-server model?
+   > humanos
+     - uno pregunta otro responde
+
+   > maquina
+     - una maquina manda una solicitud y otra maquina despacha 
+   
+   #### 4.1 List some examples
+   > - alumo pregunta a maestro
+   > - compra en linea o mercado
+ 
+## 5. Is the client-server model applicable only to the Web?
+   > No
+
+   #### 5.1 Do desktop applications use the client-server model?
+   > Si
+ 
+   #### 5.2 Can you mention any other example of this model outside the Web?
+   > - Servidores Windows
+   > - Servidores Unix
+   > - Servidor de Base de Datos
+
+
+## HTTP Learning Exercise
+
+### 1. What is HTTP?
+ > Es un protocolo de la capa de aplicacion 
+   para la transmision de documentos hipermedia, como HTML.
+
+### 2. What is a Communication Protocol?
+ > Los protocolos de comunicaciones pueden cubrir la autenticación, 
+   la detección y corrección de errores y la señalización. También 
+   pueden describir la sintaxis, la semántica y la sincronización 
+   de las comunicaciones analógicas y digitales.
+
+ #### 2.1 Do humans use communication protocols?
+  > Si
+
+### 3. What is a Request in HTTP?
+ > HTTP define un conjunto de métodos de petición para indicar la 
+   acción que se desea realizar para un recurso determinado.
+
+### 4. What is a Response in HTTP?
+ > Los códigos de estado de respuesta HTTP indican si se ha
+   completado satisfactoriamente una solicitud HTTP específica.
+
+### 5. What is an HTTP method?
+ > Existen varios tipos de métodos de solicitud HTTP, que modifican 
+   por completo el tipo de respuesta que obtiene del servidor. 
+   Los más comunes son:
+
+   >> - GET
+   >> - HEAD
+   >> - POST
+   >> - PUT
+   >> - DELETE
+   >> - CONNECT
+   >> - OPTIONS
+   >> - TRACE 
+   >> - PATH
+
+### 6. What are HTTP request headers?
+ > Los encabezados de solicitud vienen justo después de las líneas de 
+   solicitud y brindan información adicional sobre la transacción. 
+   El encabezado especifica información sobre el host, el software 
+   del servidor web que utiliza el cliente final, cuál es el agente 
+   de usuario del cliente y más.
+
+## APIs Core Understanding
+
+
+### 1. What is an API?
+ > Un software intermediario que permite que las aplicaciones se 
+   comuniquen entre sí. Cada vez que se usa una aplicación como Facebook, 
+   se envía un mensaje instantáneo o se mira el pronóstico del tiempo en 
+   el teléfono, se utiliza una API.
+
+### 2. What is a Protocol?
+ > Los protocolos de comunicaciones pueden cubrir la autenticación, 
+   la detección y corrección de errores y la señalización. También 
+   pueden describir la sintaxis, la semántica y la sincronización 
+   de las comunicaciones analógicas y digitales.
+
+### 3. Is the term API only applicable to the communication of programs over the Internet?
+ > No, en los inicios de API era una comunicacion local
+
+### 4. Why is structured communication between two programs important?
+ > Facilidad de crear soluciones mas robustas, cada programa soluciona algo
+   muy especifico y por lo tanto la integracion de los programas se puede
+   generar una solucion compleja
+
+4.1 Do we humans use APIs when communicating without technology?
+ > Si, por ejemplo se realiza una solicitud de un plato al mesero
+   el mesero traslada nuestro pedido al chef.
+
+5. Is an API just another program or a standard?
+ > Es un programa donde se realiza peticiones especificas por ejemplo el clima.
+   Nota: los sistemas REST interactúan a través de operaciones estándar en los
+   recursos, no dependen de la implementación de interfaces.
+
+6. Do you know any API? Can you list at least 5 examples of APIs?
+ >- API Google Maps
+ >- Star Wars API
+ >- New York Times Movie Reviews
+ >- Call of Duty: Modern Warfare
+ >- Lord of the Rings API
+
+## From JSON to REST
+
+
+### 1. What is JSON?
+ > un formato basado en texto estándar para representar datos 
+   estructurados en la sintaxis de objetos de JavaScript. Es comúnmente 
+   utilizado para transmitir datos en aplicaciones web
+
+#### 1.1 Is JSON the same as a plain Javascript object?
+ > JSON es un formato de texto que es completamente independiente del lenguaje 
+   pero utiliza convenciones que son familiares para los programadores de la 
+   familia de lenguajes C, incluidos C, C++, C#, Java, JavaScript, Perl, Python 
+   y muchos
+
+### 2. What is REST?
+ > REST es una interfaz para conectar varios sistemas basados en el protocolo 
+   HTTP (uno de los protocolos más antiguos) y nos sirve para obtener y generar
+   datos y operaciones, devolviendo esos datos en formatos muy específicos, 
+   como XML y JSON.
+
+#### 2.1 Is REST a programming language, framework, technology, or architecture pattern?
+ > architecture pattern
+
+### 3. What is a Resource in REST?
+ > recursos en un sistema REST    			
+ >- GET: recupera un recurso específico (por id) o una colección de recursos
+ >- POST: crea un nuevo recurso
+ >- PUT: actualiza un recurso específico (por id)
+ >- ELIMINAR: eliminar un recurso específico por id.
+
+3.1 What is a resource identifier?
+ > Forma que queremos interactuar con un sistema o la accion que se desea
+
+### 4. How are HTTP and REST related?
+ > REST usa el Protocolo HTTP para la transmicion de datos
+
+#### 4.1 What HTTP methods does REST use within its architecture rules?
+ > REST se apoya en HTTP, los verbos que utiliza son exactamente los 
+   mismos, con ellos se puede hacer GET, POST, PUT y DELETE.
+
+#### 4.2 Why do we use HTTP methods in REST and how do they relate to resources?
+ > Los metodos de HTTP y REST son las mismas accione entre los dos,
+   al usar un metodo tiene el mismo fin para ambos solamente que cada uno lo
+   trabaja a su manera.
+
+### 5. Is REST the same as HTTP?
+ >- REST es una arquitectura
+ >- HTTP es un protocolo de comunicacion
+
+## REST API Clients
